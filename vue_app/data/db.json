@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create new homepage banner",
+      "details": "Some details",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "Add automatic messages",
+      "details": "create triggers",
+      "complete": false
+    }
+  ]
+}
