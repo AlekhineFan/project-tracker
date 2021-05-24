@@ -2,18 +2,18 @@
   <div class="home">
     <div v-if="projects.length">
       <div v-for="project in projects" :key="project.id">
-        <p>{{ project.title }}</p>
+        <SingleProject :project="project" @projectDeleted="handleDelete" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  // @ is an alias to /src
+  import SingleProject from '../components/SingleProject';
 
   export default {
     name: 'Home',
-    components: {},
+    components: { SingleProject },
     data() {
       return {
         projects: [],
@@ -24,6 +24,11 @@
         .then(res => res.json())
         .then(data => (this.projects = data))
         .catch(err => console.log(err));
+    },
+    methods: {
+      handleDelete(id) {
+        this.projects = this.projects.filter(p => p.id != id);
+      },
     },
   };
 </script>
