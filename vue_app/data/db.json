@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": "Create new homepage banner",
-      "details": "Some details",
-      "complete": true
+      "details": "Some details...",
+      "complete": false
     },
     {
       "id": 2,
