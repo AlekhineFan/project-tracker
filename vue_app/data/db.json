@@ -3,13 +3,13 @@
     {
       "id": 1,
       "title": "Create new homepage banner",
-      "details": "Some details...",
-      "complete": false
+      "details": "Some details, really this time",
+      "complete": true
     },
     {
       "id": 2,
       "title": "Add automatic messages",
-      "details": "create triggers",
+      "details": "create triggers right now",
       "complete": false
     }
   ]
